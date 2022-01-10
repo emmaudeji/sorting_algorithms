@@ -3,11 +3,10 @@
 /**
  * bubble_sort - Sorts an array of integers in ascending
  * order using the Bubble sort algorithm
- * @array: An array of integers
- * @size: The size of the array
- * Return: returns void
+ * @array: Array of integers
+ * @size: Size of the array
+ * Return: Void - No return
  */
-
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
@@ -18,13 +17,16 @@ void bubble_sort(int *array, size_t size)
 		return;
 	}
 
-	/* Tranverse the array */
+	/* Travel the array */
 	for (i = 0; i < size - 1; i++)
 	{
-		/* loop to Compare */
+		/* loop for Compare */
 		for (j = 0; j < size - i - 1; j++)
 		{
-		/* check if the number in the left is bigger than number in the right */
+			/*
+			* if the number in the left is bigger than number
+			* in the right swap positions
+			*/
 			if (array[j] > array[j + 1])
 			{
 				/* Swap positions */
